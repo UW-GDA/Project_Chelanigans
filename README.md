@@ -11,11 +11,15 @@ This study will attempt to quantify the abundance of littoral algae along the sh
 ##Background:  
 Filamentous algae in the littoral region of Lake Chelan have become a concern in recent years. The filamentous algae attaches to rocks along the shoreline and is viewed as a nuisance organism to property owners and visitors. Oligotrophic lakes, like Lake Chelan, are characterized by low nutrients and limited algal growth. The appearance of littoral filamentous algae in an oligotrophic lake is commonly associated with an increased flux of nutrients such as Nitrogen and Phosphorus. Currently, there is no ongoing data collection occurring at Lake Chelan regarding littoral algae and previous experiments are sparse.   
 
+alternative:
+Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material that is void of nutrients and creates an impermeable layer on the lakebed. Glacial till has also been shown to have negative effects on plankton [6].
+
 ##Objectives:  
 1. Identify temporal trends in benthic algae coverage (south half of lake)  
 2. Identify temporal trends in glacial till turbidity (north half of lake)  
 
 Datasets you will use (with links, if available)  
+Sentinel-2
   
 Tools/packages you’ll use (with links)  
 
@@ -42,3 +46,5 @@ C. Baughman, B. Jones, K. Bartz, D. Young, and C. Zimmerman, “Reconstructing T
 
 [5]
 Jassby, Alan D., Goldman, Charles R., Reuter, John E., Richards, Robert C., "Origins and scale dependence of temporal variability in the transparency of Lake Tahoe, California–Nevada," Limnology and Oceanography, 2, 1999, doi: 10.4319/lo.1999.44.2.0282.
+
+[6]
