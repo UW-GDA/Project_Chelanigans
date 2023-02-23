@@ -11,16 +11,18 @@ This study will attempt to quantify the abundance of littoral algae along the sh
 ##Background:  
 Filamentous algae in the littoral region of Lake Chelan have become a concern in recent years. The filamentous algae attaches to rocks along the shoreline and is viewed as a nuisance organism to property owners and visitors. Oligotrophic lakes, like Lake Chelan, are characterized by low nutrients and limited algal growth. The appearance of littoral filamentous algae in an oligotrophic lake is commonly associated with an increased flux of nutrients such as Nitrogen and Phosphorus. Currently, there is no ongoing data collection occurring at Lake Chelan regarding littoral algae and previous experiments are sparse.   
 
-alternative:
-Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material that is void of nutrients and creates an impermeable layer on the lakebed. Glacial till has also been shown to have negative effects on plankton [6].
+alternative:  
+Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material that is void of nutrients and creates an impermeable layer on the lakebed. Glacial till has also been shown to have negative effects on plankton [6].  
 
 ##Objectives:  
-1. Identify temporal trends in benthic algae coverage (south half of lake)  
-2. Identify temporal trends in glacial till turbidity (north half of lake)  
+1. Identify temporal trends in benthic algae coverage (south half of lake)   
+2. Identify temporal trends in glacial till turbidity (north half of lake)   
 
 ##Datasets you will use (with links, if available):  
-Sentinel-2
-https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access
+Sentinel-2  
+https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access  
+  
+  
   
 ##Tools/packages you’ll use (with links):  
 
@@ -28,10 +30,10 @@ https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access
 ##Planned methodology/approach:  
 1. Find correct rgb/nir ratios to identify benthic algae (or glacial till)
 2. Develop a notebook that will track temporal changes in abundance/location
-3. 
+3. Create a timeseries to visualize changes since 2016
 
 ##Expected outcomes:  
-
+1. Visualize the apparent increase in benthic algae (or glacial till)
 
 Any other relevant information, images/tables, references, etc.
 
