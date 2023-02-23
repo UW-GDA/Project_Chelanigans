@@ -18,12 +18,17 @@ Global climate change has caused rapid melting of glaciers, including those whic
 1. Identify temporal trends in benthic algae coverage (south half of lake)  
 2. Identify temporal trends in glacial till turbidity (north half of lake)  
 
-Datasets you will use (with links, if available)  
+##Datasets you will use (with links, if available):  
 Sentinel-2
+https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access
   
-Tools/packages you’ll use (with links)  
+##Tools/packages you’ll use (with links):  
 
-Planned methodology/approach  
+
+##Planned methodology/approach:  
+1. Find correct rgb/nir ratios to identify benthic algae (or glacial till)
+2. Develop a notebook that will track temporal changes in abundance/location
+3. 
 
 ##Expected outcomes:  
 
