@@ -1,7 +1,7 @@
 # Project Chelanigans
 Assessing temporal variability in littoral algae (or glacial till) at Lake Chelan, WA   
 
-## Project Title: Asseessment of temporal variability in littoral algae (or glacial till) at Lake Chelan, WA  
+## Project Title: Assessment of temporal variability in littoral algae (or glacial till) at Lake Chelan, WA  
 
 ## Team: Jason MacDonald  
 
@@ -67,3 +67,9 @@ C. Baughman, B. Jones, K. Bartz, D. Young, and C. Zimmerman, “Reconstructing T
 Jassby, Alan D., Goldman, Charles R., Reuter, John E., Richards, Robert C., "Origins and scale dependence of temporal variability in the transparency of Lake Tahoe, California–Nevada," Limnology and Oceanography, 2, 1999, doi: 10.4319/lo.1999.44.2.0282.
 
 [6]
+Sommaruga, R., Kandolf, G. "Negative consequences of glacial turbidity for the survival of freshwater planktonic heterotrophic flagellates." Sci Rep 4, 4113 (2014). https://doi.org/10.1038/srep04113
+
+[7]
+Laird, K.R., Barouillet, C., Cumming, B.F. et al. "Influence of glacial turbidity and climate on diatom communities in two Fjord Lakes (British Columbia, Canada)." Aquat Sci 83, 13 (2021). https://doi.org/10.1007/s00027-020-00767-3
+
+
