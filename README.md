@@ -5,25 +5,25 @@ Assessing temporal variability in littoral algae (or glacial till) at Lake Chela
 
 ## Team: Jason MacDonald  
 
-## Short summary:  
+## Short summary  
 This study will attempt to quantify the abundance of littoral algae along the shore of Lake Chelan and track any patterns over the past ~50 years to develop a better understanding of how much change has occurred.  
 
-## Background:  
+## Background  
 Filamentous algae in the littoral region of Lake Chelan have become a concern in recent years. The filamentous algae attaches to rocks along the shoreline and is viewed as a nuisance organism to property owners and visitors. Oligotrophic lakes, like Lake Chelan, are characterized by low nutrients and limited algal growth. The appearance of littoral filamentous algae in an oligotrophic lake is commonly associated with an increased flux of nutrients such as Nitrogen and Phosphorus. Currently, there is no ongoing data collection occurring at Lake Chelan regarding littoral algae and previous experiments are sparse.   
 
 alternative:  
 Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material that is void of nutrients and creates an impermeable layer on the lakebed. Glacial till has also been shown to have negative effects on plankton [6].  
 
-## Objectives:  
+## Objectives  
 1. Identify temporal trends in benthic algae coverage (south half of lake)   
 2. Identify temporal trends in glacial till turbidity (north half of lake)   
 
-## Datasets you will use (with links, if available):  
+## Datasets  
 Sentinel-2  
 https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access  
   
     
-## Tools and packages:  
+## Tools and packages  
 1. Rasterio  
 https://rasterio.readthedocs.io/en/latest/api/rasterio.html  
 2. Numpy  
@@ -35,12 +35,12 @@ https://geopandas.org/
 5. Shapely  
 https://pypi.org/project/Shapely/  
 
-## Planned methodology/approach:  
+## Planned methodology/approach  
 1. Find correct rgb/nir ratios to identify benthic algae (or glacial till with alternative)  
 2. Develop a notebook that will track temporal changes in abundance/location  
 3. Create a timeseries to visualize changes since 2016  
 
-## Expected outcomes:  
+## Expected outcomes  
 1. Visualize the apparent increase in benthic algae (or glacial till)  
 
 ## Conclusions, Results and Lessons Learned  
@@ -49,7 +49,7 @@ https://pypi.org/project/Shapely/
 
 ## Any other relevant information, images/tables, references, etc.  
 
-## References:  
+## References  
 
 [1]
 Jean M. Jacoby, Debra D. Bouchard & Clayton R. Patmont "Response of Periphyton to Nutrient Enrichment in Lake Chelan, WA," Lake and Reservoir Management, 7:1, 33-43, 1991, DOI: 10.1080/07438149109354252
