@@ -20,7 +20,12 @@ Global climate change has caused rapid melting of glaciers, including those whic
 
 ## Datasets  
 Sentinel-2  
-https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access  
+https://cloud.google.com/storage/docs/public-datasets/sentinel-2#dataset_access    
+base URL https://storage.googleapis.com/gcp-public-data-landsat/LC08/01  
+
+Harmonized Landsat-8 & Sentinel-2 (HLS)
+https://cmr.earthdata.nasa.gov/cloudstac/LPCLOUD
+https://gist.github.com/scottyhq/efd583d66999ce8f6e8bcefa81545b8d
   
     
 ## Tools and packages  
@@ -34,14 +39,22 @@ https://pandas.pydata.org/
 https://geopandas.org/  
 5. Shapely  
 https://pypi.org/project/Shapely/  
+6. SeaDAS
+https://seadas/gsfc/nasa.gov/
 
 ## Planned methodology/approach  
-1. Find correct rgb/nir ratios to identify benthic algae (or glacial till with alternative)  
-2. Develop a notebook that will track temporal changes in abundance/location  
-3. Create a timeseries to visualize changes since 2016  
+* Phase 1
+    1. Develop script to access all relevant HLS data from NASA  
+    2. Filter images with more than 10% cloud cover  
+    3. Adjust window extents
+* Phase 2    
+    1. Find correct rgb/nir ratios to identify benthic algae (or glacial till with alternative)  
+    2. Develop a notebook that will track temporal changes in abundance (area) and/or intensity  
+    3. Create a timeseries to visualize seasonal and annual changes since 2016  
 
 ## Expected outcomes  
-1. Visualize the apparent increase in benthic algae (or glacial till)  
+1. Visualize the apparent increase in benthic algae 
+2. Visualize seasonality in glacial till  
 
 ## Conclusions, Results and Lessons Learned  
 
@@ -72,4 +85,9 @@ Sommaruga, R., Kandolf, G. "Negative consequences of glacial turbidity for the s
 [7]
 Laird, K.R., Barouillet, C., Cumming, B.F. et al. "Influence of glacial turbidity and climate on diatom communities in two Fjord Lakes (British Columbia, Canada)." Aquat Sci 83, 13 (2021). https://doi.org/10.1007/s00027-020-00767-3
 
+[8]
+Martin Claverie, Junchang Ju, Jeffrey G. Masek, Jennifer L. Dungan, Eric F. Vermote, Jean-Claude Roger, Sergii V. Skakun, Christopher Justice, "The Harmonized Landsat and Sentinel-2 surface reflectance data set." Remote Sensing of Environment, Volume 219, 2018, Pages 145-161, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2018.09.002. (https://www.sciencedirect.com/science/article/pii/S0034425718304139)
 
+[9]
+Harmonized Landsat-8 Sentinel-2 (HLS) Product User's Guide
+https://hls.gsfc.nasa.gov/wp-content/uploads/2017/08/HLS.v1.3.UserGuide_v2-1.pdf
