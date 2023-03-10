@@ -91,3 +91,10 @@ Martin Claverie, Junchang Ju, Jeffrey G. Masek, Jennifer L. Dungan, Eric F. Verm
 [9]
 Harmonized Landsat-8 Sentinel-2 (HLS) Product User's Guide
 https://hls.gsfc.nasa.gov/wp-content/uploads/2017/08/HLS.v1.3.UserGuide_v2-1.pdf
+
+[10]
+Overview of sentinel-2
+https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/overview
+
+[11]
+Hossain, AKM & Jia, Yafei & Chao, Xiaobo. (2010). Development of Remote Sensing Based Index for Estimating/Mapping Suspended Sediment Concentration in River and Lake Environments. 
