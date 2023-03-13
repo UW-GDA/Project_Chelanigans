@@ -12,7 +12,7 @@ This study will attempt to quantify the abundance of littoral algae along the sh
 Filamentous algae in the littoral region of Lake Chelan have become a concern in recent years. The filamentous algae attaches to rocks along the shoreline and is viewed as a nuisance organism to property owners and visitors. Oligotrophic lakes, like Lake Chelan, are characterized by low nutrients and limited algal growth. The appearance of littoral filamentous algae in an oligotrophic lake is commonly associated with an increased flux of nutrients such as Nitrogen and Phosphorus. Currently, there is no ongoing data collection occurring at Lake Chelan regarding littoral algae and previous experiments are sparse.   
 
 alternative:  
-Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material that is void of nutrients and creates an impermeable layer on the lakebed. Glacial till has also been shown to have negative effects on plankton [6].  
+Global climate change has caused rapid melting of glaciers, including those which feed into Lake Chelan. As glaciers melt, the turbidity caused by glacial till can be tracked by satelite imagery. Glacial till is composed of inorganic material, likely contains Phosphorus from the Earth's crust, and creates an impermeable layer on the lakebed which inhibits certain nutrients from entering the water column from the soil-water interface. Glacial till has also been shown to have negative effects on plankton [6].  
 
 ## Objectives  
 1. Identify temporal trends in benthic algae coverage (south half of lake)   
