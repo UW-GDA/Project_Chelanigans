@@ -12,11 +12,11 @@
 ## Team: Jason MacDonald  
 
 ## Short summary  
-During the 2021 Pacific Northwest heatwave from June 22 to July 2, I hypothesize that the glaciers which feed Lake Chelan underwent a rapid melt event. When such an event occurs, fine grained sediment, called glacial flour, will be transported with the meltwater to the lake [2]. This causes the lake to be cloudy which blocks light attenuation, disrupting several biotic processes [2][3][4]. This study will attempt to quantify the abundance of glacial till turbidity within a glacially fed lake; before, during, and after a presumed rapid glacial melt event. 
+During the 2021 Pacific Northwest heatwave from June 22 to July 2, the glaciers which feed Lake Chelan likely underwent some level of rapid melt event. When such an event occurs, fine grained sediment, called glacial flour, will be transported with the meltwater to the lake [2]. This causes the lake to be cloudy which blocks light attenuation, disrupting several biotic processes [2][3][4]. This study will attempt to quantify the abundance of glacial till turbidity within a glacially fed lake; before, during, and after a presumed rapid glacial melt event. 
 
 ## Background  
  
-Lake Chelan is located on the eastern slopes of the North Cascades. The slow ebb and flow of glaciers across millenia is the incredible force that formed the third deepest freshwater lake in the United States. This unique origin separates Lake Chelan into two basins: the Lucerne Basin to the northwest, and the Wapato Basin to the southeast. Figure 1 below shows the Lucerne Basin which encompasses the upper ~75% of the lake's reach and is much deeper than the Wapato Basin, reaching a maximum depth of 1486 ft. The Wapato Basin is much more shallow, with an average depth of 190 ft. [5]
+Lake Chelan is located on the eastern slopes of the North Cascades. The slow ebb and flow of glaciers across millenia is the incredible force that formed the third deepest freshwater lake in the United States. This unique origin separates Lake Chelan into two basins: the Lucerne Basin to the northwest, and the Wapato Basin to the southeast. Figure 2 below shows the Lucerne Basin which encompasses the upper ~75% of the lake's reach and is much deeper than the Wapato Basin, reaching a maximum depth of 1486 ft. The Wapato Basin is much more shallow, with an average depth of 190 ft. [5]
 
 ![ full-expanse, natural-color-composition map 2021-07-11 ](./output/chelan_1_site-exploration/full/natural-color-comp_2021-07-11.png " full-expanse, natural-color-composition map 2021-07-11 ")  
 <figcaption align = "left"><b>Fig.2 - Natural-color composition locale map for Lucerne Basin, Lake Chelan, WA (2021-07-11).</b></figcaption>  
@@ -112,6 +112,7 @@ NOTE: In general, notebooks are organized with install/import commands at the to
         NDTI = (red-green)/(red+green)  [6]  
         NDSSI = (blue-nir)/(blue+nir)   [7]  
         
+    Talk about why different color wavelengths matter here..
     The key to success is proper order of operations. Again, images are pulled from notebook 0 dataframe and a window is chosen for the area of interest. The mask is created from geojson file. The mask is then applied to each band of interest before being normalized.  
     The main attraction here is the final plot comparing signals for turbidity between the index ratios. This plot may be used to determine the signal for turbidity by comparing results from a known turbid event and a known clear water day.  
     
@@ -129,7 +130,7 @@ The following section provides raw summary results. Captions describe each figur
 ![ figure of available shots, characterized by cloud cover ](./output/chelan_0_query-data_2021/bokeh_plot_full.png " figure of available shots, characterized by cloud cover ") <figcaption align = "left"><b>Fig.3 - A visualization of available Landsat-8 and Sentinel-2 shots provided with the HLS notebook.</b></figcaption>  
 <br/><br/>  
 
-![ figure of available shots with less than 20% cloud cover ](./output/chelan_0_query-data_2021/bokeh_plot.png " figure of available shots with less than 20% cloud cover ") <figcaption align = "left"><b>Fig.4 - A visualization of available Landsat-8 and sentinel-2 shots after filtering for shots with less than 20% cloud cover.</b></figcaption>  
+![ figure of available shots with less than 20% cloud cover ](./output/chelan_0_query-data_2021/bokeh_plot.png " figure of available shots with less than 20% cloud cover ") <figcaption align = "left"><b>Fig.4 - A visualization of available Landsat-8 and Sentinel-2 shots after filtering for shots with less than 20% cloud cover.</b></figcaption>  
 <br/><br/>  
 
 ### chelan_1_site-exploration  
@@ -203,7 +204,7 @@ The values seem to be constant across all time. Something is not plotting right 
 ### chelan_4_affected-area-analysis  
 First, the signal threshold analysis for NDTI and NDSSI were a success. The initial ("wrong") signal threshold analysis produced relatively close results for NDTI threshold (-0.35 compared to -0.395). However, the NDSSI threshold of 0.567 showed significant improvement in capturing some signal related to suspendded solids, albeit different from that of NDTI.  
 
-It seems I have detected some signal of turbidity (potentially from glacial melt and glacial flour). In short, the heatwave here in 2021 led to a spike in Normalized Difference Turbidity Index (red - green / red + green) in Lake Chelan. In Figure 14 for NDTI, July 6th and 11th show a pink area of turbidity passing from top left toward bottom right. The same dates for NDSSI do not correlate as nicely however. It seems that the two indices detect different substances, which is logical as they are based on different wavelengths. The next step would be connecting these raster index signals with field data (i.e. secci depth).  
+It seems I have detected some signal of turbidity (potentially from glacial melt and glacial flour). In short, the heatwave here in 2021 led to a spike in Normalized Difference Turbidity Index (red - green / red + green) in Lake Chelan. In Figure 14 for NDTI, July 6th and 11th show a pink area of turbidity passing from top left toward bottom right. The same dates for NDSSI do not correlate as nicely however. It seems that the two indices detect different substances, which is logical as they are based on different wavelengths. The next step would be connecting these raster index signals with field data (i.e. secci depth). Additionally, another step would be to characterize different causes of turbidity and determine if each NDI is detecting a different form (such as glacial flour from headwaters vs muddy side stream hit with heavy rain).
 
 ## Lessons Learned  
   * Try stage your code to handle pairs or triplets. This makes it easier to scale up when ready.
