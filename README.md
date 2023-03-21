@@ -120,7 +120,6 @@ NOTE: In general, notebooks are organized with install/import commands at the to
 * ### chelan_2_rgb-analysis  
     Notebook 2 is designed to explore the different color signals (RGB) produced over Lake Chelan, as well as examine the relationship between Normalized Difference Index (NDI) ratios and expected turbidity. NDIs like NDTI for Turbidity and NDSSI for Suspended Solids operate through bandwidth ratios. The equations for NDTI and NDSSI are given below:  
 
-
 | <font size='4'>Normalized Difference Turbidity Index [6]</font> |  
 |:---|  
 | <font size='3'>$$NDTI = (red-green) / (red+green)$$</font> |  
