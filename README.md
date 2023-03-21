@@ -108,9 +108,17 @@ NOTE: In general, notebooks are organized with install/import commands at the to
     For each plotting block of code, a `for` statement loops through each raster image as it loads the selected window, normalizes the red, green, and blue colors, and stacks them in order for plotting.  
 * ### chelan_2_rgb-analysis  
     Notebook 2 is designed to explore the different color signals (RGB) produced over Lake Chelan, as well as examine the relationship between Normalized Difference Index (NDI) ratios and expected turbidity. NDIs like NDTI for Turbidity and NDSSI for Suspended Solids operate through bandwidth ratios. The equations for NDTI and NDSSI are given below:  
-    
-        NDTI = (red-green)/(red+green)  [6]  
-        NDSSI = (blue-nir)/(blue+nir)   [7]  
+
+
+| Normalized Difference Turbidity Index |  |  
+|:---|:--:|  
+| $$NDTI = (red-green) / (red+green)$$ | [6] |  
+
+| Normalized Difference Suspended Solids Index |  |  
+|:---|:--:|  
+| $$NDSSI = (blue-nir) / (blue+nir)$$ | [7] |  
+
+   
         
     Talk about why different color wavelengths matter here..
     The key to success is proper order of operations. Again, images are pulled from notebook 0 dataframe and a window is chosen for the area of interest. The mask is created from geojson file. The mask is then applied to each band of interest before being normalized.  
@@ -222,20 +230,20 @@ This project has been the beginning stages of what will hopefully becomean ongoi
 3. Load data on the fly and remove need to download files
 4. chelan_1_site-exploration.ipynb  
  i. add sampling locations to site map  
- ii. add points of interest to site map
- iii. add chelan geom to site map to show orientation (i.e. Lucerne Basin excluding Wapato Basin
- iv. add watershed geom
- v. upgrade scalebar
- vi. upgrade cardinal symbol
+ ii. add points of interest to site map  
+ iii. add chelan geom to site map to show orientation (i.e. Lucerne Basin excluding Wapato Basin)  
+ iv. add watershed geom  
+ v. upgrade scalebar  
+ vi. upgrade cardinal symbol  
 5. chelan_2_rgb-analysis  
- i.  resolve issue with index ratio comparison figure
+ i.  resolve issue with index ratio comparison figure  
 6. chelan_3_timeseries-visualization  
- i. revisit these plots
+ i. revisit these plots  
 7. chelan_4_affected_area_analysis  
  i. resolve how to add background over mask (currently hidden by mask)  
- ii. swap y1/y2 axis in NDTI/NDSSI signal figure  
- iii. remove "(right)" from y2 (NDSSI) axis label  
- iv. scale this up to include the entire Lucerne Basin  
+ ii. swap y1/y2 axis in NDTI/NDSSI signal figure    
+ iii. remove "(right)" from y2 (NDSSI) axis label    
+ iv. scale this up to include the entire Lucerne Basin    
 8. scale this analysis to include all shots over time   
  i. use this to analyze temporal trends in glacial turbidity
  ii. long-term mean, current deviation from ltmean
