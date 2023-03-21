@@ -127,11 +127,10 @@ NOTE: In general, notebooks are organized with install/import commands at the to
 | <font size='4'>Normalized Difference Suspended Solids Index [7]</font> |  
 |:---|  
 | <font size='3'>$$NDSSI = (blue-nir)/(blue+nir)$$</font> |  
-   
-        
-    Talk about why different color wavelengths matter here..
-    The key to success is proper order of operations. Again, images are pulled from notebook 0 dataframe and a window is chosen for the area of interest. The mask is created from geojson file. The mask is then applied to each band of interest before being normalized.  
-    The main attraction here is the final plot comparing signals for turbidity between the index ratios. This plot may be used to determine the signal for turbidity by comparing results from a known turbid event and a known clear water day.  
+
+   - Talk about why different color wavelengths matter here.  
+       The key to success is proper order of operations. Again, images are pulled from notebook 0 dataframe and a window is chosen for the area of interest. The mask is created from geojson file. The mask is then applied to each band of interest before being normalized.   
+       The main attraction here is the final plot comparing signals for turbidity between the index ratios. This plot may be used to determine the signal for turbidity by comparing results from a known turbid event and a known clear water day.  
     
 * ### chelan_3_timeseries-visualization  
 (this notebook needs work)  
