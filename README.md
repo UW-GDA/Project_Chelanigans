@@ -15,7 +15,8 @@
 During the 2021 Pacific Northwest heatwave from June 22 to July 2, the glaciers which feed Lake Chelan likely underwent some level of rapid melt event. When such an event occurs, fine grained sediment, called glacial flour, will be transported with the meltwater to the lake [2]. This causes the lake to be cloudy which blocks light attenuation, disrupting several biotic processes [2][3][4]. This study will attempt to quantify the abundance of glacial till turbidity within a glacially fed lake; before, during, and after a presumed rapid glacial melt event. 
 
 ## Background  
- 
+  
+### Lake Chelan  
 Lake Chelan is located on the eastern slopes of the North Cascades. The slow ebb and flow of glaciers across millenia is the incredible force that formed the third deepest freshwater lake in the United States. This unique origin separates Lake Chelan into two basins: the Lucerne Basin to the northwest, and the Wapato Basin to the southeast. Figure 2 below shows the Lucerne Basin which encompasses the upper ~75% of the lake's reach and is much deeper than the Wapato Basin, reaching a maximum depth of 1486 ft. The Wapato Basin is much more shallow, with an average depth of 190 ft. [5]
 
 ![ full-expanse, natural-color-composition map 2021-07-11 ](./output/chelan_1_site-exploration/full/natural-color-comp_2021-07-11.png " full-expanse, natural-color-composition map 2021-07-11 ")  
@@ -30,11 +31,21 @@ While the Wapato Basin is much more populated than the Lucerne Basin, and theref
 1. the Wapato Basin is downstream from the Lucerne Basin
 2. it offers a potential glimpse into the effects of global climate change on a glacially fed, oligotrophic lake.
 
-As water is a dark target from space, it is extremely difficult to assess water quality using satelite imagery. However, it has been shown that changes in turbidity can be tracked by satelite imagery using ratios of raster bands from the visible and near-infrared spectra [6][7][8]. 
+As water is a dark target from space, it is extremely difficult to assess water quality using satelite imagery. However, it has been shown that changes in turbidity can be tracked by satelite imagery using ratios of raster bands from the visible and near-infrared spectra [6][7][8].  
+
+### Sentinel-2  
+-give background on sentinel-2 
+* when was it launched
+* what (bands) does it collect
+* what resolution
+* how often
+* daytime/nighttime
+* clouds
+* problems/successes analyzing water
 
 ## Objectives  
 1. Identify temporal trends in glacial flour turbidity (Lucerne Basin)   
-2. Identify temporal trends in benthic algae coverage (Wapato Basin)   
+2. Identify temporal trends in benthic algae coverage (Wapato Basin)    
 
 ## Datasets  
 For this analysis, Sentinel-2 data was utilized due to its 10m spatial resolution.  
@@ -110,14 +121,13 @@ NOTE: In general, notebooks are organized with install/import commands at the to
     Notebook 2 is designed to explore the different color signals (RGB) produced over Lake Chelan, as well as examine the relationship between Normalized Difference Index (NDI) ratios and expected turbidity. NDIs like NDTI for Turbidity and NDSSI for Suspended Solids operate through bandwidth ratios. The equations for NDTI and NDSSI are given below:  
 
 
-| Normalized Difference Turbidity Index |  |  
-|:---|:--:|  
-| $$NDTI = (red-green) / (red+green)$$ | [6] |  
+| <font size='4'>Normalized Difference Turbidity Index [6]</font> |  
+|:---|  
+| <font size='3'>$$NDTI = (red-green) / (red+green)$$</font> |  
 
-| Normalized Difference Suspended Solids Index |  |  
-|:---|:--:|  
-| $$NDSSI = (blue-nir) / (blue+nir)$$ | [7] |  
-
+| <font size='4'>Normalized Difference Suspended Solids Index [7]</font> |  
+|:---|  
+| <font size='3'>$$NDSSI = (blue-nir)/(blue+nir)$$</font> |  
    
         
     Talk about why different color wavelengths matter here..
