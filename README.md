@@ -20,12 +20,13 @@ During the 2021 Pacific Northwest heatwave from June 22 to July 2, the glaciers 
 Lake Chelan is located on the eastern slopes of the North Cascades. The slow ebb and flow of glaciers across millenia is the incredible force that formed the third deepest freshwater lake in the United States. This unique origin separates Lake Chelan into two basins: the Lucerne Basin to the northwest, and the Wapato Basin to the southeast. Figure 2 below shows the Lucerne Basin which encompasses the upper ~75% of the lake's reach and is much deeper than the Wapato Basin, reaching a maximum depth of 1486 ft. The Wapato Basin is much more shallow, with an average depth of 190 ft. [6]
 
 <figure>
-    <img src="./output/chelan_1_site-exploration/full/natural-color-comp_2021-07-11.png"
+    <img src="./output/chelan_1_site-exploration/lucerne_basin/natural-color-comp_2021-07-11.png"
          alt="full-expanse, natural-color-composition map 2021-07-11"
          title="full-expanse, natural-color-composition map 2021-07-11"         
          width="600"/>
     <figcaption><b>Fig.2 - Natural-color composition locale map for Lucerne Basin, Lake Chelan, WA (2021-07-11).</b></figcaption>
 </figure>
+<br>
 
 Lake Chelan has historically been an oligotrophic lake, meaning it is not highly productive in terms of algal growth and maintains a fairly clear water column [6]. Glacial meltwater commonly contains fine grained sediment, called glacial flour, which formed over millenia of weathering under the immense pressure of these glaciers [2]. As glaciers warm, the meltwater will transport glacial flour to the lake [2]. Glacial flour is so fine, that it stays suspended in the water column, much like silt. This cloud of suspended particles is measured as turbidity. When a lake becomes turbid, with sediment or organic matter, the cloudiness of the lake blocks light attenuation, disrupting several biotic processes [3][4][5].  
 
@@ -156,6 +157,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.3 - A visualization of available Landsat-8 and Sentinel-2 shots provided with the HLS notebook.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_0_query-data_2021/bokeh_plot.png"
@@ -164,6 +166,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.4 - A visualization of available Landsat-8 and Sentinel-2 shots after filtering for shots with less than 20% cloud cover.</b></figcaption>
 </figure>
+<br><br>
 
 ### chelan_1_site-exploration  
 
@@ -174,6 +177,7 @@ The following section provides raw summary results. Captions describe each figur
          width="800"/>
     <figcaption><b>Fig.5 - A timeseries representation of the natural-color composite images for Lucerne Basin, Lake Chelan, Wa.</b></figcaption>
 </figure>
+<br><br>
 
 ### chelan_2_rgb-analysis  
 
@@ -184,6 +188,7 @@ The following section provides raw summary results. Captions describe each figur
          width="600"/>
     <figcaption><b>Fig.6- A comparison of histograms of red band wavelength values when sampled across the entire raster versus sampling only masked values about the body of Lake Chelan, as defined by USGS polygon.</b></figcaption>
 </figure>  
+<br><br>
 
 <figure>
     <img src="./output/chelan_2_rgb-analysis/lucerne_basin/green-signal_2021-09-24.png"
@@ -192,6 +197,7 @@ The following section provides raw summary results. Captions describe each figur
          width="600"/>
     <figcaption><b>Fig.7 - A comparison of histograms of green band wavelength values when sampled across the entire raster versus sampling only masked values about the body of Lake Chelan, as defined by USGS polygon.</b></figcaption>
 </figure>  
+<br><br>
 
 <figure>
     <img src="./output/chelan_2_rgb-analysis/lucerne_basin/blue-signal_2021-09-24.png"
@@ -200,6 +206,7 @@ The following section provides raw summary results. Captions describe each figur
          width="600"/>
     <figcaption><b>Fig.8 - A comparison of histograms of blue band wavelength values when sampled across the entire raster versus sampling only masked values about the body of Lake Chelan, as defined by USGS polygon.</b></figcaption>
 </figure> 
+<br><br>
 
 <figure>
     <img src="./output/chelan_2_rgb-analysis/lucerne_basin/masked-RGB-signals.png"
@@ -207,7 +214,8 @@ The following section provides raw summary results. Captions describe each figur
          title="lucerne-basin, masked-RGB-signals 2021-09-24"         
          width="600"/>
     <figcaption><b>Fig.9 - Combined RBG signals sampled about the body of Lake Chelan, as defined by USGS polygon.</b></figcaption>
-</figure>
+</figure>  
+<br><br>
 
 <figure>
     <img src="./output/chelan_2_rgb-analysis/lucerne_basin/visualize-normalization.png"
@@ -216,6 +224,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.10 - A potential teaching tool visualizing the need for and result of normalization.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_2_rgb-analysis/lucerne_basin/index-ratio-comparison.png"
@@ -224,6 +233,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.11 - A comparison of index ratios and classification of signals from NDTI and NDSSI.</b></figcaption>
 </figure>
+<br><br>
 
 ### chelan_3_timeseries-visualization  
 (this notebook needs work)
@@ -237,6 +247,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.12 - Model configuration histogram without pre-normalization.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_4_affected-area-analysis/upper_lucerne_basin/model-configuration-histogram_2021-09-24.png"
@@ -245,6 +256,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.13 - Model configuration histogram with pre-normalization.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_4_affected-area-analysis/upper_lucerne_basin/NDTI_thresh_timeseries.png"
@@ -253,6 +265,7 @@ The following section provides raw summary results. Captions describe each figur
          width="800"/>
     <figcaption><b>Fig.14 - Timeseries of NDTI threshold mask, showing plume of turbidity in upper Lucerne Basin, Lake Chelan, WA.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_4_affected-area-analysis/upper_lucerne_basin/NDSSI_thresh_timeseries.png"
@@ -261,6 +274,7 @@ The following section provides raw summary results. Captions describe each figur
          width="800"/>
     <figcaption><b>Fig.15 - Timeseries of NDSSI threshold mask, showing plume of suspended solids in upper Lucerne Basin, Lake Chelan, WA.</b></figcaption>
 </figure>
+<br><br>
 
 <figure>
     <img src="./output/chelan_4_affected-area-analysis/upper_lucerne_basin/NDTI-NDSSI-signals-timeseries.png"
@@ -269,6 +283,7 @@ The following section provides raw summary results. Captions describe each figur
          width="700"/>
     <figcaption><b>Fig.16 - Timeseries of NDTI vs NDSSI signals in Lucerne Basin, Lake Chelan, WA.</b></figcaption>
 </figure>
+<br><br>
 
 ## Discussion
  
